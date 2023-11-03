@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "clean": "turbo clean",
+    "prettier": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.11",
+    "turbo": "latest"
+  },
+  "name": "turborepo-example",
+  "packageManager": "yarn@1.22.15",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
